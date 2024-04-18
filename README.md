@@ -11,6 +11,18 @@ You can use --api-auth user1:pass1,user2:pass2 option to enable authentication f
 
 API calls are (almost) direct translation from http://127.0.0.1:7860/docs as of 2022/11/21.
 
+<table border="0">
+ <tr>
+    <td><img src="https://github.com/xlinx/SDAPIGodX/blob/main/images/o1.png?raw=true"></td>
+    <td><img src="https://github.com/xlinx/SDAPIGodX/blob/main/images/o11.png?raw=true"></td>
+ </tr>
+ <tr>
+    <td><img src="https://github.com/xlinx/SDAPIGodX/blob/main/images/o2.png?raw=true"></td>
+    <td><img src="https://github.com/xlinx/SDAPIGodX/blob/main/images/o22.png?raw=true"></td>
+ </tr>
+</table>
+
+
 # Install
 
 ```
@@ -75,7 +87,7 @@ result1.parameters
 
 result1.image
 ```
-![txt2img](https://user-images.githubusercontent.com/1288793/200459205-258d75bb-d2b6-4882-ad22-040bfcf95626.jpg)
+![txt2img](https://github.com/xlinx/SDAPIGodX/blob/main/output.png?raw=true)
 
 
 ## img2img
@@ -83,7 +95,6 @@ result1.image
 result2 = api.img2img(images=[result1.image], prompt="cute cat", seed=5555, cfg_scale=6.5, denoising_strength=0.6)
 result2.image
 ```
-![img2img](https://user-images.githubusercontent.com/1288793/200459294-ab1127e5-04e5-47ac-82b2-2bbd0648402a.jpg)
 
 ## img2img inpainting
 ```
@@ -109,7 +120,7 @@ inpainting_result = api.img2img(images=[result2.image],
                                 denoising_strength=0.7)
 inpainting_result.image
 ```
-![img2img_inpainting](https://user-images.githubusercontent.com/1288793/200459398-9c1004be-1352-4427-bc00-442721a0e5a1.jpg)
+![txt2img](https://github.com/xlinx/SDAPIGodX/blob/main/00001-1447710155.png?raw=true)
 
 ## extra-single-image
 ```
