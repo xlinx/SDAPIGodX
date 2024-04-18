@@ -1,4 +1,4 @@
-# TTU SD(sdwebuiapi) extinct Plant God 創造滅絕/嶄新植物
+# TTU SD(api) extinct Plant God 創造滅絕/嶄新植物
 API client for AUTOMATIC1111/stable-diffusion-webui
 
 Supports txt2img, img2img, extra-single-image, extra-batch-images API calls.
