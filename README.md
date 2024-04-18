@@ -1,4 +1,4 @@
-# TTU SD(sdwebuiapi) Client God 
+# TTU SD(sdwebuiapi) extinct Plant God 
 API client for AUTOMATIC1111/stable-diffusion-webui
 
 Supports txt2img, img2img, extra-single-image, extra-batch-images API calls.
@@ -87,7 +87,7 @@ result1.parameters
 
 result1.image
 ```
-![txt2img](https://github.com/xlinx/SDAPIGodX/blob/main/output.png?raw=true)
+![txt2img](https://github.com/xlinx/SDAPIGodX/blob/main/images/o1.png?raw=true)
 
 
 ## img2img
@@ -120,7 +120,7 @@ inpainting_result = api.img2img(images=[result2.image],
                                 denoising_strength=0.7)
 inpainting_result.image
 ```
-![txt2img](https://github.com/xlinx/SDAPIGodX/blob/main/00001-1447710155.png?raw=true)
+![txt2img](https://github.com/xlinx/SDAPIGodX/blob/main/images/o11.png?raw=true)
 
 ## extra-single-image
 ```
@@ -132,7 +132,6 @@ result3.image
 ```
 (768, 768)
 
-![extra_single_image](https://user-images.githubusercontent.com/1288793/200459455-8579d740-3d8f-47f9-8557-cc177b3e99b7.jpg)
 
 ## extra-batch-images
 ```
@@ -141,11 +140,9 @@ result4 = api.extra_batch_images(images=[result1.image, inpainting_result.image]
                                  upscaling_resize=1.5)
 result4.images[0]
 ```
-![extra_batch_images_1](https://user-images.githubusercontent.com/1288793/200459540-b0bd2931-93db-4d03-9cc1-a9f5e5c89745.jpg)
 ```
 result4.images[1]
 ```
-![extra_batch_images_2](https://user-images.githubusercontent.com/1288793/200459542-aa8547a0-f6db-436b-bec1-031a93a7b1d4.jpg)
 
 ### Async API support
 txt2img, img2img, extra_single_image, extra_batch_images support async api call with use_async=True parameter. You need asyncio, aiohttp packages installed.
@@ -392,7 +389,6 @@ r = api.txt2img(prompt="photo of a beautiful girl with blonde hair", height=512,
 img = r.image
 img
 ```
-![cn1](https://user-images.githubusercontent.com/1288793/222315754-43c6dc8c-2a62-4a31-b51a-f68523118e0d.png)
 
 ```
 # txt2img with ControlNet (used 1.0 but also supports 1.1)
@@ -402,7 +398,6 @@ r = api.txt2img(prompt="photo of a beautiful girl", controlnet_units=[unit1])
 r.image
 ```
 
-![cn2](https://user-images.githubusercontent.com/1288793/222315791-c6c480eb-2987-4044-b673-5f2cb6135f87.png)
 
 
 ```
@@ -420,17 +415,14 @@ r2 = api.img2img(prompt="girl",
            )
 r2.image
 ```
-![cn3](https://user-images.githubusercontent.com/1288793/222315816-1155b0c2-570d-4455-a68e-294fc7061b0a.png)
 
 ```
 r2.images[1]
 ```
-![cn4](https://user-images.githubusercontent.com/1288793/222315836-9a26afec-c407-426b-9a08-b2cef2a32ab1.png)
 
 ```
 r2.images[2]
 ```
-![cn5](https://user-images.githubusercontent.com/1288793/222315859-e6b6286e-854d-40c1-a516-5a08c827c49a.png)
 
 
 ```
