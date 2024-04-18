@@ -1,4 +1,4 @@
-# sdwebuiapi
+# TTU SD(sdwebuiapi) Client God 
 API client for AUTOMATIC1111/stable-diffusion-webui
 
 Supports txt2img, img2img, extra-single-image, extra-batch-images API calls.
